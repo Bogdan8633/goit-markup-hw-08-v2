@@ -47,6 +47,16 @@
   border: none;
   padding: 0;
   line-height: 0;
+
+  &:hover,
+  &:focus {
+    .mobile-menu-open__icon {
+      fill: var(--accent-color);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .main-nav {
