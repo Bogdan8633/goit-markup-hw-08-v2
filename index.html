@@ -772,9 +772,14 @@
             placeholder="Введите текст"
             rows="5"
           ></textarea>
-          <label class="form__agree-text">
-            <input class="form__agree-checkbox" type="checkbox" name="agree" value="agree" />
-            <span class="form__checkbox-icon"></span>
+          <input
+            id="user-policy"
+            class="form__agree-checkbox visually-hidden"
+            type="checkbox"
+            name="agree"
+            value="agree"
+          />
+          <label for="user-policy" class="form__agree-text">
             Соглашаюсь с рассылкой и принимаю&nbsp;<a class="policy" href="#">Условия договора</a>
           </label>
           <button class="button button--contained form__button" type="submit">Отправить</button>
